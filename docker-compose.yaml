@@ -1,10 +1,10 @@
 version: '3.0'
-service:
+services:
   httpd-service:
     build: .
     ports:
       - 90:80
     volumes:
-       - kool_form_pack:/usr/local/apache2/htdocs
- volumes:
-   kool_form_pack:
+      - web-vol:/usr/local/apache2/htdocs
+volumes:
+  web-vol:
