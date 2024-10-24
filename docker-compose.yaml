@@ -1,0 +1,10 @@
+version: '3.0'
+service:
+  httpd-service:
+    build: ./ 2136_kool_form_pack
+    ports:
+      - 90:80
+    volumes:
+       - 2136_kool_form_pack:/usr/local/apache2/htdocs
+ volumes:
+   2136_kool_form_pack:
